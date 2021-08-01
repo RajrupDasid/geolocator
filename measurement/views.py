@@ -10,7 +10,7 @@ def calculate_distance_view(request):
         instance=form.save(commit=False)
         instance.destination=form.cleaned_data.get('destination')
         instance.location='San Francisco'
-        instance.location=4000.00
+        instance.distance=4000.00
         instance.save()
     context={
         'distance':obj,
