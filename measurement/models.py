@@ -7,5 +7,5 @@ class Measurement(models.Model):
     distance=models.DecimalField(max_digits=10,decimal_places=2)
     created=models.DateTimeField(auto_now_add=True)
 
-    def __Str__(self):
+    def __str__(self):
         return f"Distance from {self.location} to {self.destination} is {self.distance} km"
